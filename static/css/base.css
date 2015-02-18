@@ -1,0 +1,59 @@
+/* ==========
+ Default
+ ========== */
+body {
+    text-align: center;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Average Sans', sans-serif;
+    background-color: rgb(248, 249, 249);
+    color: rgb(113, 120, 131);
+}
+
+section {
+    clear: both;
+}
+
+a {
+    color: rgb(115, 159, 208);
+}
+
+/* ==========
+ Layout
+ ========== */
+.layout-main {
+    padding-top: 5em;
+}
+
+/* ==========
+ Site Parts
+ ========== */
+.site-title {
+    margin: auto;
+    padding: 0.5em;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+}
+
+.site-title__extends {
+    color: rgb(128, 176, 125);
+}
+
+.site-description {
+    color: rgb(220, 225, 233);
+}
+
+/* ==========
+ Module
+ ========== */
+.button-warning {
+    padding: 0.3em 0.6em;
+    text-decoration: none;
+    line-height: 1.6em;
+    border-radius: 5px;
+}
+
+.button-warning {
+    background-color: rgb(179, 83, 78);
+    color: rgb(255, 255, 255);
+}
