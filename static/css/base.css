@@ -1,72 +1,129 @@
 /* ==========
  Default
  ========== */
-body{
-    margin: 0;
-    padding: 0;
+body {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    text-align: center;
-    line-height: 1em;
-    letter-spacing: 0.05em;
-    font-family: 'Average Sans', sans-serif;
-    color: rgb(113, 120, 131);
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: 0.05em;
+	font-family: 'Average Sans', sans-serif;
+	color: rgb(113, 120, 131);
 }
 
 section {
-    clear: both;
+	clear: both;
 }
 
 a {
-    color: rgb(115, 159, 208);
+	color: rgb(115, 159, 208);
 }
 
 /* ==========
  Layout
  ========== */
 .layout-main {
-    padding: 5em 0;
-    background-color: rgb(248, 249, 249);
+	padding: 5em 0;
+	border-bottom: 1px dotted rgb(220, 225, 233);
+	background-color: rgb(248, 249, 249);
+}
+
+.layout-header {
+	padding: 0.3em;
+	border-bottom: 2px solid rgb(220, 225, 233);
+	line-height: 1.6em;
+	text-align: right;
+	background-color: rgb(113, 120, 131);
+	color: rgb(255, 255, 255);
+}
+
+.layout-footer {
+	padding: 4em;
+	background-color: rgb(51, 51, 51);
+	color: rgb(102, 102, 102);
+}
+
+.laytout-footer__links {
+	color: rgb(102, 102, 102);
+}
+
+.layout-content {
+	padding: 2em;
+	border-bottom: 1px solid rgb(220, 225, 233);
 }
 
 /* ==========
  Site Parts
  ========== */
 .site-title {
-    margin: auto;
-    padding: 0.75em;
-    font-size: 3em;
-    letter-spacing: 0.05em;
+	margin: auto;
+	padding: 0.75em;
+	font-size: 3em;
+	letter-spacing: 0.05em;
 }
 
-@media screen and (min-width : 768px){
-    .site-title{
-	    padding: 1em;
-        font-size : 5em;
-    } 
+@media screen and (min-width : 768px) {
+	.site-title {
+		padding: 1em;
+		font-size: 5em;
+	}
 }
 
 .site-title__extends {
 	font-weight: bold;
-    color: rgb(128, 176, 125);
+	color: rgb(128, 176, 125);
 }
 
 .site-description {
-    color: rgb(220, 225, 233);
+	color: rgb(220, 225, 233);
 }
 
+.section-head {
+	margin: 0 auto 2em auto;
+}
+
+.section-head__title {
+	font-size: 1.75em;
+	line-height: 1em;
+}
+
+.section-head__description {
+	line-height: 1.5em;
+	color: rgb(119, 119, 119);
+}
+
+.section-part {
+	
+}
+
+.section-part__title {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.section-part__description {
+	line-height: 1.5em;
+	font-size: 0.9em;
+	color: rgb(119, 119, 119);
+}
 /* ==========
  Module
  ========== */
 .button-warning {
-    padding: 0.3em 0.6em;
-    text-decoration: none;
-    line-height: 1.6em;
-    border-radius: 5px;
+	padding: 0.3em 0.6em;
+	text-decoration: none;
+	line-height: 1.6em;
+	border-radius: 5px;
 }
 
 .button-warning {
-    background-color: rgb(179, 83, 78);
-    color: rgb(255, 255, 255);
+	background-color: rgb(179, 83, 78);
+	color: rgb(255, 255, 255);
+}
+
+.img-circle {
+	border-radius: 50%;
 }
