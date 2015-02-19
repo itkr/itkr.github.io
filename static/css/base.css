@@ -49,6 +49,9 @@ a {
 .laytout-footer__links {
 	color: rgb(102, 102, 102);
 }
+.laytout-footer__links a{
+	display: inline-block;
+}
 
 .layout-content {
 	padding: 2em;
