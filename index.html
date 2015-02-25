@@ -21,7 +21,7 @@
 </head>
 <body>
 	<!-- <header class="layout-header">help</header> -->
-	<section class="layout-main">
+	<section class="layout-main" id="layout-main">
 		<h1 class="site-title">
 			<span class="site-title__extends">itkr</span>.github.io
 		</h1>
@@ -124,5 +124,16 @@
 		</div>
 		<br> &copy; 2015 Itakura Shota All rights reserved.
 	</footer>
+	<script type="text/javascript">
+	(function(global, document){
+		var $ = function(id){return document.getElementById(id);};
+		var changeImage = function(){
+			var files = ['127H.jpg', '118H.jpg', 'top1.jpg'];
+			var file = files[Math.floor(Math.random() * files.length)];
+			$('layout-main').style.backgroundImage = 'url(static/img/photo/' + file + ')';
+		};
+		global.onload = changeImage;
+	})(this, this.document);
+	</script>
 </body>
 </html>
