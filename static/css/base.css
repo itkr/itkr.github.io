@@ -80,7 +80,7 @@ a {
 	padding: 0.75em;
 	font-size: 3em;
 	letter-spacing: 0.05em;
-	/* text-shadow: 1px 1px 0 rgb(102, 102, 102); */
+/*	text-shadow: 0 0 1px rgb(220, 225, 233); */
 }
 
 @media screen and (min-width : 768px) {
@@ -97,6 +97,7 @@ a {
 
 .site-description {
 	color: rgb(220, 225, 233);
+	text-shadow: 0 0 1px rgb(113, 120, 131);
 }
 
 .section-head {
