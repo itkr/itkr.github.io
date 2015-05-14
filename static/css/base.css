@@ -68,6 +68,11 @@ a {
 	border-bottom: 1px solid rgb(220, 225, 233);
 }
 
+.layout-content__inner {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+
 #development{
 	padding: 3em;
 	background-color: rgb(248, 249, 249);
