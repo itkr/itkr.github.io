@@ -1,0 +1,8 @@
+.img-card{
+	border: 1px solid #eeeeee;
+	padding: 5px;
+	box-shadow: 5px 5px 0 rgba(200, 200, 200, 0.4);
+	width: 160px;
+	margin: 2em;
+	cursor: pointer;
+}
