@@ -10,7 +10,7 @@
 //			'top2.jpg'
 		];
 		var file = files[Math.floor(Math.random() * files.length)];
-		$('layout-main').style.backgroundImage = 'url(static/img/photo/' + file
+		$('layout-main').style.backgroundImage = 'url(static/img/photo/top/' + file
 				+ ')';
 	};
 	global.onload = changeImage;
