@@ -1,3 +1,0 @@
-[submodule "static/lib/Chart.js"]
-	path = static/lib/Chart.js
-	url = git@github.com:nnnick/Chart.js.git
