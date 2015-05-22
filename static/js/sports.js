@@ -21,9 +21,9 @@
 	// events
 	new Chart($("graph-events").getContext("2d")).Doughnut([
         {label: 'Ice hockey', value: 15, color:"#aaf2fb"},
-        {label: 'Runnnig', value: 1, color: "#ffb6b9"},
-        {label: 'Climbing', value: 1, color: "#ffe361"},
         {label: 'Weight', value: 2, color: "#fbaa6e"},
+        {label: 'Climbing', value: 1, color: "#ffe361"},
+        {label: 'Runnnig', value: 0.5, color: "#ffb6b9"},
         {label: 'Other', value: 0, color: "#A8BECB"}
     ]);
 }(this, this.document));
