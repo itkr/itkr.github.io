@@ -5,3 +5,9 @@
 .android-banner{
 	margin-top: 1em;
 }
+
+@media screen and (max-width : 768px) {
+	.img-banner {
+		max-width: 300px;
+	}
+}
