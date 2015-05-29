@@ -151,6 +151,47 @@ a {
 	font-size: 0.9em;
 	color: rgb(119, 119, 119);
 }
+
+.feed {
+	border-bottom: 1px dotted rgb(220, 225, 233);
+}
+
+.feed__image {
+	padding: 1.5em 0;
+}
+
+.feed__image img {
+	max-width: 100px;
+	max-heght: 100px;
+}
+
+.feed__title {
+
+}
+
+.feed__summary {
+
+}
+
+.feed__data {
+	font-size: 0.75em;
+	text-align: right;
+}
+
+.feed__contents {
+	text-align: left;
+	line-height: 1.5em;
+	padding: 0 0 20px 0;
+}
+
+@media screen and (max-width : 768px) {
+	.feed__image {
+		content: "";
+	}
+	.feed__contents {
+		padding: 1em;
+	}
+}
 /* ==========
  Module
  ========== */
