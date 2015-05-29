@@ -156,6 +156,10 @@ a {
 	border-bottom: 1px dotted rgb(220, 225, 233);
 }
 
+.feed__inner {
+	max-width: 920px;
+}
+
 .feed__image {
 	padding: 1.5em 0;
 }
