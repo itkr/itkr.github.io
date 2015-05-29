@@ -2,20 +2,22 @@
 
     var NUM_ENTRIES = 3,
         URL = "http://qiita.com/itkr/feed",
-        OUTPUT_ID = "feed";
-
-    var baseHTML = '<div class="feed">'
-	+ '  <div class="pure-g">'
-	+ '    <div class="pure-u-1 pure-u-md-1-4 section-part feed__image">'
-	+ '      <a href="{link}" target="_blank"><img src="{img}"></a>'
-	+ '    </div>'
-	+ '    <div class="pure-u-1 pure-u-md-3-4 section-part feed__contents">'
-	+ '      <h4><a href="{link}" target="_blank">{title}</a></h4>'
-	+ '      <div class="feed__summary">{summary}</div>'
-	+ '      <div class="feed__data">({date})</div>'
-	+ '    </div>'
-	+ '  </div>'
-	+ '</div>';
+        OUTPUT_ID = "feed",
+        DEFAULT_IMAGE = 'static/img/thumbnail/miku.png',
+        BASE_ENTRY_HTML = '<div class="feed">\n'
+            + '  <div class="pure-g">\n'
+            + '    <div class="pure-u-1 pure-u-md-1-4 section-part feed__image">\n'
+            + '      <a href="{link}" target="_blank"><img src="{img}"></a>\n'
+            + '    </div>\n'
+            + '    <div class="pure-u-1 pure-u-md-3-4 section-part feed__contents">\n'
+            + '      <h4><a href="{link}" target="_blank">{title}</a></h4>\n'
+            + '      <div class="feed__summary">\n'
+            + '          {summary}\n'
+            + '      </div>\n'
+            + '      <div class="feed__data">({date})</div>\n'
+            + '    </div>\n'
+            + '  </div>\n'
+            + '</div>\n';
 
     var format = function(string, dict) {
         var string = string.replace();
@@ -35,8 +37,8 @@
     function makeEntryHTML(entry) {
         var date = formatDate(new Date(entry.publishedDate)),
             img = entry.content.match(/src="(.*?)"/igm);
-        img = img === null ? 'static/img/thumbnail/miku.png' : img[0].replace('src=', '').split('"').join('');
-        return format(baseHTML, {
+        img = img === null ? DEFAULT_IMAGE : img[0].replace('src=', '').split('"').join('');
+        return format(BASE_ENTRY_HTML, {
             'img': img,
             'title': entry.title,
             'date': date,
