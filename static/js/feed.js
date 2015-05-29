@@ -1,7 +1,7 @@
 (function(global, document) {
 
     var NUM_ENTRIES = 3,
-        URL = "http://qiita.com/itkr/feed",
+        URL = "http://itkr.net/api/rss",
         OUTPUT_ID = "feed",
         DEFAULT_IMAGE = 'static/img/no_image.png',
         BASE_ENTRY_HTML = '<div class="feed">\n'
