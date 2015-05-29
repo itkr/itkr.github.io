@@ -3,7 +3,7 @@
     var NUM_ENTRIES = 3,
         URL = "http://qiita.com/itkr/feed",
         OUTPUT_ID = "feed",
-        DEFAULT_IMAGE = 'static/img/thumbnail/miku.png',
+        DEFAULT_IMAGE = 'static/img/no_image.png',
         BASE_ENTRY_HTML = '<div class="feed">\n'
             + '  <div class="pure-g">\n'
             + '    <div class="pure-u-1 pure-u-md-1-4 section-part feed__image">\n'
