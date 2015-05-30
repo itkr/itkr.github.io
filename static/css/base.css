@@ -152,6 +152,12 @@ a {
 	color: rgb(119, 119, 119);
 }
 
+.section-part__sentence {
+	line-height: 1.5em;
+	padding: 0 2em;
+	margin: 0 auto 3em auto;
+}
+
 .feed {
 	border-bottom: 1px dotted rgb(220, 225, 233);
 }
@@ -195,6 +201,10 @@ a {
 	.feed__contents {
 		padding: 1em;
 	}
+}
+
+.lefty{
+	text-align: left;
 }
 /* ==========
  Module

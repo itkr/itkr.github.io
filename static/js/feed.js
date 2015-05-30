@@ -27,11 +27,21 @@
         return string;
     };
 
-    function formatDate(date) {
+    function formatDate(date, baseFormat) {
         var year = date.getFullYear(),
             month = date.getMonth() + 1,
             day = date.getDate();
-        return year + "." + (month < 10 ? "0" + month : month) + "." + (day < 10 ? "0" + day : day);
+        if(arguments.length < 2) {
+        	baseFormat = '{year}.{month}.{day}';
+        }
+        month = (month < 10 ? "0" + month : month);
+        day = (day < 10 ? "0" + day : day)
+        
+        return format(baseFormat, {
+        	'year': year,
+        	'month': month,
+        	'day': day
+        });
     }
 
     function makeEntryHTML(entry) {
@@ -48,7 +58,8 @@
     }
 
     function init() {
-        var feed = new global.google.feeds.Feed(URL),
+        var suffix = formatDate(new Date(), '{year}{month}{day}'),
+        	feed = new global.google.feeds.Feed(URL + '?' + suffix),
             html = "",
             i = 0;
         feed.setNumEntries(NUM_ENTRIES);
