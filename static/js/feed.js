@@ -14,7 +14,7 @@
             + '      <div class="feed__summary">\n'
             + '          {summary}\n'
             + '      </div>\n'
-            + '      <div class="feed__data">({date})</div>\n'
+            + '      <div class="feed__data">{categories}({date})</div>\n'
             + '    </div>\n'
             + '  </div>\n'
             + '</div>\n';
@@ -46,13 +46,21 @@
 
     function makeEntryHTML(entry) {
         var date = formatDate(new Date(entry.publishedDate)),
-            img = entry.content.match(/src="(.*?)"/igm);
+            img = entry.content.match(/src="(.*?)"/igm),
+			categories = '';
         img = img === null ? DEFAULT_IMAGE : img[0].replace('src=', '').split('"').join('');
+
+        if (entry.categories.length > 0) {
+            categories += entry.categories;
+            categories += '　|　'
+        }
+
         return format(BASE_ENTRY_HTML, {
             'img': img,
             'title': entry.title,
             'date': date,
             'link': entry.link,
+			'categories': categories,
             'summary': entry.content.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '').substring(0, 100) + '...'
         })
     }

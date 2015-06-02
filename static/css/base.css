@@ -196,7 +196,7 @@ a {
 
 @media screen and (max-width : 768px) {
 	.feed__image {
-		content: "";
+		display: none;
 	}
 	.feed__contents {
 		padding: 1em;
@@ -209,7 +209,8 @@ a {
 /* ==========
  Module
  ========== */
-.button-warning {
+.button-warning,
+.button-more {
 	padding: 0.3em 0.6em;
 	text-decoration: none;
 	line-height: 1.6em;
@@ -219,6 +220,11 @@ a {
 .button-warning {
 	background-color: rgb(179, 83, 78);
 	color: rgb(255, 255, 255);
+}
+
+.button-more {
+	border: 1px solid #cccccc;
+	color: #cccccc;
 }
 
 .img-circle {
