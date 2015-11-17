@@ -17,3 +17,10 @@
 	list-style-type: none;
 	color: #000000;
 }
+
+.icon img {
+	display: inline;
+	height: 1.5em;
+	vertical-align: middle;
+	padding: 0 0.5em;
+}
