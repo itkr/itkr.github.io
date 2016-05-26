@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+    font-family: 'HanziPen SC';
+}
+
+h1, h2, h3 {
+    font-family: 'HanziPen SC';
+}
+
+.remark-code, .remark-inline-code {
+    font-family: 'Ubuntu Mono';
+}
+
+.remark-slide-scaler{
+	background-image: url('../img/bg_b.jpg');
+	background-size: 100%;
+	color: #eeeeee;
+}
