@@ -26,13 +26,17 @@ a {
  Layout
  ========== */
 .layout-main {
-    padding: 5em 0;
+    /* padding: 5em 0; */
     border-bottom: 1px dotted rgb(220, 225, 233);
     background-color: rgb(248, 249, 249);
     /*	background-image: url('../img/photo/127H.jpg'); */
     background-position: center;
     /*	background-attachment: fixed; */
     background-size: 140%;
+}
+.layout-main div {
+    padding: 5em 0;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width : 768px) {
 	.layout-main {
