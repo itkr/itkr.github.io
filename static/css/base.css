@@ -252,3 +252,19 @@ a {
 	line-height: 1.5em;
 	padding: 0;
 }
+
+.message {
+	display: block;
+	margin: auto;
+	padding: 1em;
+	border: 1px solid #cccccc;
+	background-color: #eeeeee;
+	color: #666666;
+}
+
+.warning {
+	border-color: #eeee66;
+	color: #aaaa33;
+	background-color: #ffffcc;
+
+}
